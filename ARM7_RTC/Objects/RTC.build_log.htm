@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\arm\ARM7_RTC\RTC.uvproj
+Project File Date:  08/03/2024
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling RTC.c...
+compiling UART0.c...
+linking...
+Program Size: Code=3772 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\Objects\RTC.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+" - 0 Error(s), 0 Warning(s).
+ument of type "char *" is incompatible with parameter of type "const unsigned char *"
+        disp(0xC0, datestr); // Display date at the beginning of the second line
+RTC.c: 2 warnings, 0 errors
+compiling UART0.c...
+linking...
+Program Size: Code=4216 RO-data=52 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\Objects\RTC.axf" - 0 Error(s), 2 Warning(s).
+compiling RTC.c...
+"RTC.c" - 0 Error(s), 0 Warning(s).
+ of type "char *" is incompatible with parameter of type "const unsigned char *"
+        disp(0x80, timestr); // Display time at the beginning of the first line
+RTC.c(82): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+        disp(0xC0, datestr); // Display date at the beginning of the second line
+RTC.c: 2 warnings, 0 errors
+"RTC.c" - 0 Error(s), 2 Warning(s).

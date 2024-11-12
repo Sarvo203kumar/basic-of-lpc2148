@@ -1,0 +1,14 @@
+Dependencies for Project 'RTC', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x59D76C24)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (.\RTC.c)(0x66AF4D0D)(--c99 -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\objects\rtc.o --omf_browse .\objects\rtc.crf --depend .\objects\rtc.d)
+I (C:\Keil\ARM\Inc\Philips\lpc214x.h)(0x532C1500)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7E87C)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7E87C)
+I (UART0.h)(0x66ADD318)
+I (lcd.h)(0x66AF4DB2)
+F (.\UART0.c)(0x66ADD320)(--c99 -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\objects\uart0.o --omf_browse .\objects\uart0.crf --depend .\objects\uart0.d)
+I (UART0.h)(0x66ADD318)
+I (C:\Keil\ARM\Inc\Philips\lpc214x.h)(0x532C1500)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7E87C)
+F (.\UART0.h)(0x66ADD318)()
+F (.\lcd.h)(0x66AF4DB2)()

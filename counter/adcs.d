@@ -1,0 +1,1 @@
+.\adcs.o: adcs.asm
