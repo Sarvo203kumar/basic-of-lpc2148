@@ -1,0 +1,14 @@
+Dependencies for Project 'dked', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x532C14EA)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\file.c)(0x66964812)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\file.o --omf_browse .\file.crf --depend .\file.d)
+I (C:\Keil\ARM\Inc\Philips\lpc214x.h)(0x532C1500)
+I (stdutils.h)(0x669600AF)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7E87C)
+I (systeminit.h)(0x6695FF48)
+I (lcd.h)(0x66961640)
+F (.\stdutils.h)(0x669600AF)()
+F (.\systeminit.h)(0x6695FF48)()
+F (.\systeminit.c)(0x6695FF04)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\systeminit.o --omf_browse .\systeminit.crf --depend .\systeminit.d)
+I (C:\Keil\ARM\Inc\Philips\lpc214x.h)(0x532C1500)
+I (stdutils.h)(0x669600AF)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7E87C)
