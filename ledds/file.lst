@@ -1,0 +1,72 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             MyCode, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000         
+    4 00000000         start
+    5 00000000 E3A01A01        MOV              R1, #0x1000 ; Load R1 with 4096
+                                                             (0x1000)
+    6 00000004         
+    7 00000004 E28100FF        ADD              R0, R1, #0xFF ; Add 4095 to R1,
+                                                             result in R0 (R0 =
+                                                             0x1FFF)
+    8 00000008 E2412B02        SUB              R2, R1, #0x800 ; Subtract 2048 
+                                                            from R1, result in 
+                                                            R2 (R2 = 0x0800)
+    9 0000000C E20130FF        AND              R3, R1, #0xFF ; Perform bitwise
+                                                             AND between R1 and
+                                                             0xFF, result in R3
+                                                             (R3 = 0x00)
+   10 00000010 E381400F        ORR              R4, R1, #0x0F ; Perform bitwise
+                                                             OR between R1 and 
+                                                            0x0F, result in R4 
+                                                            (R4 = 0x100F)
+   11 00000014 E22150FF        EOR              R5, R1, #0xFF ; Perform bitwise
+                                                             XOR between R1 and
+                                                             0xFF, result in R5
+                                                             (R5 = 0x10FF)
+   12 00000018         
+   13 00000018         ; End the program (infinite loop)
+   14 00000018         end
+   15 00000018 EAFFFFFE        B                end
+   16 0000001C         
+   17 0000001C                 END
+Command Line: --debug --xref --apcs=interwork --depend=.\file.d -o.\file.o -IC:
+\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Philips --pred
+efine="__EVAL SETA 1" --list=.\file.lst file.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+MyCode 00000000
+
+Symbol: MyCode
+   Definitions
+      At line 1 in file file.asm
+   Uses
+      None
+Comment: MyCode unused
+end 00000018
+
+Symbol: end
+   Definitions
+      At line 14 in file file.asm
+   Uses
+      At line 15 in file file.asm
+Comment: end used once
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 4 in file file.asm
+   Uses
+      None
+Comment: start unused
+3 symbols
+334 symbols in table

@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\lcdarm2.o"
+--strict --scatter ".\firstprogram.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\firstprogram.map" -o .\firstprogram.axf

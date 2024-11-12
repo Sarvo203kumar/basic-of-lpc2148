@@ -1,0 +1,32 @@
+
+#include "systemInit.h"
+#include "lcd.h"
+#include "uart.h"
+#include "delay.h" 
+
+
+int main() 
+{	    
+    char str[50];  
+    int len = 0;  
+    SystemInit();	
+IO1DIR = (1<<en)|(1<<rs)|(1<<d4)|(1<<d5)|(1<<d6)|(1<<d7);	
+    init();
+	disp(0x80,"SERIAL TEST:");
+	DELAY_us(100);
+	command(0x01);
+    UART0_Init(9600);
+   
+    while(1)
+    {
+        len = UART0_RxString(str);
+        UART0_Printf("Received String:%s   size=%2d\n\r",str,len);
+			write(0x80,len);
+      
+			// command(0x01);
+       //write (0x80,("str:%s",str,len));     
+    }
+    
+    
+}
+
