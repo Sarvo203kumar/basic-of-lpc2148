@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\task.o"
+--strict --scatter ".\task.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\task.map" -o .\task.axf

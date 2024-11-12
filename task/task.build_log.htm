@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\arm\task\task.uvproj
+Project File Date:  07/11/2024
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling TASK.C...
+TASK.C(10): warning:  #61-D: integer operation result is out of range
+  IO1DIR = (1<<en)|(1<<rs)|(1<<d4)|(1<<d5)|(1<<d6)|(1<<d7)|(1<<buzzer) | (0<<sensor);
+TASK.C(25): warning:  #61-D: integer operation result is out of range
+  IOPIN1 =(1<<31);
+TASK.C(25): warning:  #68-D: integer conversion resulted in a change of sign
+  IOPIN1 =(1<<31);
+TASK.C(35): warning:  #61-D: integer operation result is out of range
+  IOCLR1=(1<<31);
+TASK.C(35): warning:  #68-D: integer conversion resulted in a change of sign
+  IOCLR1=(1<<31);
+TASK.C(44): warning:  #1-D: last line of file ends without a newline
+  }
+TASK.C: 6 warnings, 0 errors
+linking...
+Program Size: Code=1680 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\task.axf" - 0 Error(s), 6 Warning(s).
+</pre>
+</body>
+</html>
